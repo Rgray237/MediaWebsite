@@ -1,0 +1,56 @@
+{
+  "name": "reviews",
+  "intro": "Welcome to DigBury, where I teach you twerps how to think!<br><br><br><br> Where there's exciting, important creativity, I'm DIGGIN it! <br><br>Where there's shallow, inane mediocrity, I'm BURYIN it!",
+  "reviews": [
+    {
+      "title": "Oranssi Pazuzu: Värähtelijä",
+      "category": "music",
+      "sub": "Driving, entrancing, fury",
+      "blurb": "Oh fuuuuck yeah",
+      "url": "oranssipazuzu.html",
+      "articleBody": "this game is  cool!",
+      "articleId": "0001",
+      "rating":"dig"
+    },
+    {
+      "title": "Magic: The Gathering",
+      "category": "games",
+      "sub": "sub2",
+      "blurb": "Collecting and battling with 'cardboard crack' reigns supreme.",
+      "url": "magicthegathering.html",
+      "articleBody": "this game cool!",
+      "articleId": "0001",
+      "rating":"dig"
+    },
+    {
+      "title": "Nier: Automata",
+      "category": "games",
+      "sub": "This game makes the player confront what it is 2B or not 2B.",
+      "blurb": "This game makes the player confront what it is 2B or not 2B.",
+      "url": "nierautomata.html",
+      "articleBody": "this game is pretty cool!",
+      "articleId": "0003",
+      "rating":"dig"
+    },
+    {
+      "title": "Midsommar",
+      "category": "movies",
+      "sub": "sub4",
+      "blurb": "Men and women, young and old, this one is beautifully hard to bear.",
+      "url": "title4.html",
+      "articleBody": "this movie is pretty cool!",
+      "articleId": "0001",
+      "rating":"dig"
+    },
+    {
+      "title": "The Irishman",
+      "category": "movies",
+      "sub": "sub4",
+      "blurb": "just... terrible.",
+      "url": "title4.html",
+      "articleBody": "this movie is very bad!",
+      "articleId": "0001",
+      "rating":"bury"
+    }
+  ]
+}

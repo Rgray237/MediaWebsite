@@ -1,0 +1,220 @@
+.overlay {
+  height: 100%;
+  width: 0;
+  position: absolute;
+  z-index: 10;
+  top: 0;
+  left: 0;
+  background-color: rgba(1,1,1,0.8);
+  overflow-x: hidden;
+  transition: 0.4s;
+}
+
+/*
+Color Scheme
+
+
+amber BE5A38
+light brown BE7C4D
+near black 353238
+gray C1B4AE
+white FFFFFF
+
+
+textBackground FFFFF3
+highlight1Teal 00D9C0
+highlight2salmon FF4365
+*/
+
+
+.overlay-content {
+  position: relative;
+  top: 25%;
+  width: 100%;
+  text-align: center;
+  margin-top: 30px;
+}
+
+.overlay a {
+  padding: 8px;
+  text-decoration: none;
+  font-size: 50px;
+  color: #A8834D;
+  display: block;
+  transition: 0.3s;
+}
+
+.overlay a:hover, .overlay a:focus {
+  color: #C1B4AE;
+}
+
+.overlay .closebtn {
+  position: absolute;
+  top: 20px;
+  right: 45px;
+  font-size: 60px;
+}
+
+.navBar {
+  position: sticky;
+  top: 0;
+  min-width: 50%;
+  z-index: 1;
+}
+
+
+.bannerImg
+{
+  display: block;
+  width: 100%;
+  margin:0 auto;
+}
+
+.bannerImgContainer
+{
+  min-width: 50%;
+  width: 100%;
+  margin:0 auto;
+}
+
+.page
+{
+  background-color: #0D0221;
+}
+
+.blurbLarge
+{
+  display: block;
+  width: 95%;
+  margin: 10px auto;
+  background-color: #984447;
+  border: 5px solid #00D9C0;
+  text-align: center;
+}
+
+.blurbLarge h1
+{
+  font-family: sans-serif;
+  color: #00D9C0;
+}
+
+.blurbSmall
+{
+  display: inline-block;
+  width: 40%;
+  background-color: #984447;
+  margin: 25px;
+  border: 5px solid #00D9C0;
+  text-align: center;
+  position: relative;
+}
+
+.blurbSmall a
+{
+  text-decoration: none;
+  color: #00D9C0;
+}
+
+.blurbSmall h1
+{
+  font-size: 25;
+  font-family: sans-serif;
+  width: 85%;
+}
+
+
+
+.bury{
+
+
+}
+
+.txtField
+{
+  width: 90%;
+  position: relative;
+  background-color: #28536B;
+  margin: 0 auto;
+}
+
+
+.txtField p
+{
+  padding: 20px;
+  color: #FFFFFF;
+  font-family: sans-serif;
+}
+
+.navbutton
+{
+  position: absolute;
+  top: -60px;
+  font-size:45px;
+  cursor:pointer;
+  color:#00D9C0;
+  text-align: center;
+  z-index: 10;
+}
+
+.navbutton:hover
+{
+  color:#FFF8F0;
+}
+
+.article
+{
+  display: inline-block;
+  width: 100%;
+  margin-top: 20px;
+  background-color: teal;
+  border: 5px solid #00D9C0;
+  text-align: center;
+}
+
+.article bdy
+{
+  display: inline-block;
+  width: 100%;
+  margin-top: 20px;
+  background-color: teal;
+  border: 5px solid #00D9C0;
+  text-align: center;
+}
+
+.dig
+{
+  display: block;
+  position: absolute;
+  right: 0px;
+  width: 20%;
+  z-index: 5;
+}
+
+.bury
+{
+  display: block;
+  position: absolute;
+  width: 20%;
+  right: 0px;
+  z-index: 5;
+}
+
+.article p
+{
+  background-color: black;
+  color: #FFFFFF;
+
+}
+
+
+.cover
+{
+  position: fixed;
+  height: 100%;
+  width: 100%;
+  top:0;
+  left: 0;
+  background: #000000;
+  z-index:9999;
+  transition: 0.4s;
+}
