@@ -26,88 +26,11 @@
   </div>
 
 
-  <div class="blurbSmall">
-    <a id="blrb1url">
-      <img src="dig.png" class="dig"></img>
-      <h1 id="blrb1title">f</h1>
-      <div class="txtField">
-        <p id="blrb1"> </p>
-      </div>
-    </a>
-  </div>
-
-  <div class="blurbSmall">
-    <a id="blrb2url">
-      <img src="dig.png" class="dig"></img>
-      <h1 id="blrb2title">f</h1>
-      <div class="txtField">
-        <p id="blrb2"> </p>
-      </div>
-    </a>
-  </div>
-
-  <div class="blurbSmall">
-    <a id="blrb3url">
-      <img src="dig.png" class="dig"></img>
-      <h1 id="blrb3title">dff</h1>
-      <div class="txtField">
-        <p id="blrb3"> </p>
-      </div>
-    </a>
-  </div>
-
-  <div class="blurbSmall">
-    <a id="blrb4url">
-      <img src="dig.png" class="dig"></img>
-      <h1 id="blrb4title">f</h1>
-      <div class="txtField">
-        <p id="blrb4"> </p>
-      </div>
-    </a>
-  </div>
-  <div class="blurbSmall">
-    <a id="blrb5url">
-      <img src="bury.png" class="bury"></img>
-      <h1 id="blrb5title"></h1>
-      <div class="txtField">
-        <p id="blrb5"> </p>
-      </div>
-    </a>
-  </div>
-
 
 </body>
 
 <script>
-  let requestURL = "reviews.json";
-  let request = new XMLHttpRequest();
-  request.open('GET', requestURL);
-  request.responseType = 'json';
-  request.send();
 
-  request.onload = function() {
-    const reviews = request.response;
-    populateTheBlurbs(reviews);
-    hidethecover();
-  }
-
-  function populateTheBlurbs(jsonObj) {
-    let intro = jsonObj['intro'];
-    document.getElementById("mainBlurb").innerHTML = intro;
-
-    let reviews = jsonObj['reviews'];
-
-    for (i = 1; i < 6; i++) {
-      var str = "blrb" + i.toString();
-      var url = "blrb" + i.toString() + "url";
-      var titles = "blrb" + i.toString() + "title";
-      document.getElementById(str).innerHTML = reviews[i - 1]["blurb"];
-      document.getElementById(url).href = reviews[i - 1]["url"];
-      document.getElementById(titles).innerHTML = reviews[i - 1]["title"];
-    }
-
-    document.getElementById("cover").style.height = "0%";
-  }
 
 
 
