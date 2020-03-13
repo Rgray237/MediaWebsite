@@ -29,7 +29,6 @@
 </body>
 
 <script>
-
 rvwRqst.onload = function() {
   const response = rvwRqst.response;
   const reviews = response['reviews'];
@@ -38,6 +37,7 @@ rvwRqst.onload = function() {
   createABlurb(reviews,2);
   createABlurb(reviews,3);
   createABlurb(reviews,4);
+  getIntroBlurb(rvwRqst);
 }
 
 </script>

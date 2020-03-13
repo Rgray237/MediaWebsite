@@ -16,6 +16,11 @@ function CreateNBlurbsOnLoad(N)
 
 }
 
+function getIntroBlurb(jsonObj)
+{
+  document.getElementById("mainBlurb").innerHTML = jsonObj.response['intro'];
+}
+
 function hideCover()
 {
   document.getElementById("cover").style.height = "0%";
