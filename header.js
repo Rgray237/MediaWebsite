@@ -1,4 +1,6 @@
 document.write('\
+<div id="cover" class="cover">\
+</div>\
 <div id="banner" class="bannerImgContainer" >\
 <a href="digbury.html">\
 <img src="scrngle.jpg" class="bannerImg" alt="scrngle">\
@@ -11,7 +13,7 @@ document.write('\
   <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>\
   <div class="overlay-content">\
     <a href="digbury.html">Home</a>\
-    <a href="music.html">Music</a>\
+    <a href="musics.html">Musics</a>\
     <a href="movies.html">Film</a>\
     <a href="games.html">Games</a>\
     <a href="products.html">Products</a>\
@@ -19,7 +21,6 @@ document.write('\
   </div>\
 </div>\
 ');
-
 
 
 function openNav() {

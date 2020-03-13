@@ -7,33 +7,38 @@
 <link rel="stylesheet" href="ourStyles.css">
 
 
-<body class="page">
-  <div id="cover" class="cover">
-  </div>
+<script src="digBuryFunctions.js"></script>
+<body class="page" onload="hideCover()">
+
   <script src="header.js"></script>
 
   <div class="blurbLarge">
     <h1 id="test">DigBury</h1>
     <div class="txtField">
       <p id="mainBlurb">
-        Welcome to DigBury, where I teach you twerps how to think!<br><br><br><br> Where there's exciting, important creativity, I'm DIGGIN it! <br><br>Where there's shallow, inane mediocrity, I'm BURYIN it!"
+        Welcome to DigBury, where I teach you twerps how to think!<br><br><br><br> Where there's exciting, important creativity, I DIG it! <br><br>Where there's shallow, inane mediocrity, I BURY it!"
       </p>
     </div>
   </div>
   <br>
 
-  <div class="smallBlurbContainer" id="blrbContainer">
-    <script src="insertBlurbs.js"></script>
+  <div class="smallBlurbContainer" id="blrbContainer" >
   </div>
-
 
 
 </body>
 
 <script>
 
-
-
+rvwRqst.onload = function() {
+  const response = rvwRqst.response;
+  const reviews = response['reviews'];
+  createABlurb(reviews,0);
+  createABlurb(reviews,1);
+  createABlurb(reviews,2);
+  createABlurb(reviews,3);
+  createABlurb(reviews,4);
+}
 
 </script>
 

@@ -4,23 +4,25 @@
   "reviews": [
     {
       "title": "Oranssi Pazuzu: Värähtelijä",
-      "category": "music",
+      "category": "musics",
       "sub": "Driving, entrancing, fury",
-      "blurb": "Oh fuuuuck yeah",
+      "blurb": "Psychadelic black metal that drives and swirls into a perfect frenzy.",
       "url": "oranssipazuzu.html",
       "articleBody": "this game is  cool!",
       "articleId": "0001",
-      "rating":"dig"
+      "rating":"dig",
+      "blurbImg":"1.jpeg"
     },
     {
       "title": "Magic: The Gathering",
       "category": "games",
       "sub": "sub2",
-      "blurb": "Collecting and battling with 'cardboard crack' reigns supreme.",
+      "blurb": "Collecting and battling with 'cardboard crack' still reigns supreme.",
       "url": "magicthegathering.html",
       "articleBody": "this game cool!",
       "articleId": "0001",
-      "rating":"dig"
+      "rating":"dig",
+      "blurbImg":"2.jpeg"
     },
     {
       "title": "Nier: Automata",
@@ -30,27 +32,30 @@
       "url": "nierautomata.html",
       "articleBody": "this game is pretty cool!",
       "articleId": "0003",
-      "rating":"dig"
+      "rating":"dig",
+      "blurbImg":"3.jpeg"
     },
     {
       "title": "Midsommar",
       "category": "movies",
       "sub": "sub4",
       "blurb": "Men and women, young and old, this one is beautifully hard to bear.",
-      "url": "title4.html",
+      "url": "midsommar.html",
       "articleBody": "this movie is pretty cool!",
       "articleId": "0001",
-      "rating":"dig"
+      "rating":"dig",
+      "blurbImg":"4.jpeg"
     },
     {
       "title": "The Irishman",
       "category": "movies",
       "sub": "sub4",
-      "blurb": "just... terrible.",
-      "url": "title4.html",
+      "blurb": "Ostensibly exploring life and death, this lifeless film has little to say about either.",
+      "url": "theirishman.html",
       "articleBody": "this movie is very bad!",
       "articleId": "0001",
-      "rating":"bury"
+      "rating":"bury",
+      "blurbImg":"5.jpeg"
     }
   ]
 }
