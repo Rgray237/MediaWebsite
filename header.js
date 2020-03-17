@@ -7,14 +7,14 @@ document.write('\
 </a>\
 </div>\
 <div id="header" class="navBar">\
-<span class="navbutton" onclick="openNav()">&#9776;</span>\
+<span class="navbutton" onclick="openNav()"> &#9776; </span>\
 </div>\
 <div id="myNav" class="overlay">\
   <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>\
   <div class="overlay-content">\
     <a href="digbury.html">Home</a>\
     <a href="musics.html">Musics</a>\
-    <a href="movies.html">Film</a>\
+    <a href="movies.html">Movies</a>\
     <a href="games.html">Games</a>\
     <a href="products.html">Products</a>\
     <a href="ideas.html">Ideas</a>\

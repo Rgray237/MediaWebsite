@@ -4,17 +4,6 @@ rvwRqst.open('GET', rvwRqstURL);
 rvwRqst.responseType = 'json';
 rvwRqst.send();
 
-function CreateNBlurbsOnLoad(N)
-{
-    const response = rvwRqst.response;
-    const reviews = response['reviews'];
-    createABlurb(reviews,0);
-    createABlurb(reviews,1);
-    createABlurb(reviews,2);
-    createABlurb(reviews,3);
-    createABlurb(reviews,4);
-
-}
 
 function getIntroBlurb(jsonObj)
 {
@@ -25,6 +14,17 @@ function hideCover()
 {
   document.getElementById("cover").style.height = "0%";
 }
+
+function createAllBlurbsOfType(reviews,type)
+{
+  for (var i = 0; i < reviews.length; i++) {
+    if (reviews[i]["category"] == type)
+    {
+      createABlurb(reviews,i);
+    }
+  }
+}
+
 
 function createABlurb(reviews,id)
 {
@@ -50,7 +50,7 @@ else
 }
 let h1 = document.createElement('h1');
 let txtFld = document.createElement('div');
-txtFld.className = "txtField";
+txtFld.className = "blurbTxt";
 let p = document.createElement('p');
 let blurbImg = document.createElement('img');
 blurbImg.className = "blurbImg";

@@ -13,15 +13,8 @@
   </div>-->
   <script src="header.js"></script>
 
-  <div class="blurbLarge">
-
-    <p>bruuuh</p>
-  </div>
 
   <div class="smallBlurbContainer" id="blrbContainer"><!--Create blurbs here.-->
-    <script src="blurbCreation.js"></script>
-
-
   </div>
 
 
@@ -30,7 +23,11 @@
 </body>
 
 <script>
-
+rvwRqst.onload = function() {
+  const response = rvwRqst.response;
+  const reviews = response['reviews'];
+  createAllBlurbsOfType(reviews,"games");
+}
 
 </script>
 
