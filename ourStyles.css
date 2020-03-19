@@ -1,3 +1,11 @@
+/*
+//
+//
+//overlay
+//
+//
+*/
+
 .overlay {
   height: 100%;
   width: 0;
@@ -38,6 +46,14 @@
   font-size: 60px;
 }
 
+/*
+//
+//
+//MISC
+//
+//
+*/
+
 .navBar {
   position: sticky;
   top: 0;
@@ -46,9 +62,55 @@
 }
 
 
+.navbutton {
+  position: fixed;
+  top: 5px;
+  left: 5px;
+  font-size: 45px;
+  cursor: pointer;
+  color: #00D9C0;
+  text-align: center;
+  padding: 5px 15px 5px 15px;
+  z-index: 10;
+  background-color: #28536B;
+  border: 5px solid #00D9C0;
+  margin: 25px;
+}
+
+.navbutton:hover {
+  color: #FFF8F0;
+}
+
+
 .page {
   background-color: #0D0221;
 }
+
+.bury {}
+
+.txtField {
+  width: 90%;
+  font-size: 16;
+  position: relative;
+  background-color: #28536B;
+  margin: 0 auto;
+}
+
+.txtField p {
+  padding: 20px;
+  color: #FFFFFF;
+  font-family: sans-serif;
+}
+
+
+
+/*
+//
+//
+//BLURBS
+//
+//
+*/
 
 .smallBlurbContainer {
   text-align: center;
@@ -87,24 +149,6 @@
   box-sizing: border-box;
 }
 
-.bannerImgContainer
-{
-  display: block;
-  height: 200px;
-  width: 500px;
-  margin: auto;
-
-}
-
-.bannerImg
-{
-  display: block;
-  height: 100%;
-  width: 100%;
-
-}
-
-
 .blurbSmall a {
   text-decoration: none;
   color: #00D9C0;
@@ -117,87 +161,6 @@
   width: 79%;
   text-align: left;
   margin: 10px;
-}
-
-.bury {}
-
-.txtField {
-  width: 90%;
-  font-size: 16;
-  position: relative;
-  background-color: #28536B;
-  margin: 0 auto;
-}
-
-.txtField p {
-  padding: 20px;
-  color: #FFFFFF;
-  font-family: sans-serif;
-}
-
-.navbutton {
-  position: fixed;
-  top: 10px;
-  left: 10px;
-  font-size: 50px;
-  cursor: pointer;
-  color: #00D9C0;
-  text-align: center;
-  z-index: 10;
-  background-color: #28536B;
-  border: 5px solid #00D9C0;
-  margin: 25px;
-}
-
-.navbutton:hover {
-  color: #FFF8F0;
-}
-
-.article {
-  display: inline-block;
-  width: 100%;
-  margin-top: 20px;
-  background-color: teal;
-  border: 5px solid #00D9C0;
-  text-align: center;
-}
-
-.article bdy {
-  display: inline-block;
-  width: 100%;
-  margin-top: 20px;
-  background-color: teal;
-  border: 5px solid #00D9C0;
-  text-align: center;
-}
-
-.dig {
-  display: block;
-  position: absolute;
-  right: 0px;
-  width: 20%;
-  z-index: 5;
-}
-
-.bury {
-  display: block;
-  position: absolute;
-  width: 20%;
-  right: 0px;
-  z-index: 5;
-}
-
-.article p {
-  background-color: black;
-  color: #FFFFFF;
-}
-
-.blurbImg {
-  margin-top: 40px;
-  height: 275px;
-  left: calc(width);
-  z-index: 2;
-
 }
 
 .blurbTxt {
@@ -226,6 +189,137 @@
   left: 5px;
   bottom: 0px;
 }
+
+/*
+//
+//
+//BANNER
+//
+//
+*/
+
+.bannerImgContainer
+{
+  display: block;
+  height: 200px;
+  width: 500px;
+  margin: auto;
+
+}
+
+.bannerImg
+{
+  display: block;
+  height: 100%;
+  width: 100%;
+
+}
+
+/*
+//
+//
+//Article
+//
+//
+*/
+
+.article {
+  width: 500px;
+  position: relative;
+  margin:  20px auto;
+  background-color: #984447;
+  border: 5px solid #00D9C0;
+  text-align: center;
+  box-sizing: border-box;
+}
+
+.articleDigBuryImg
+{
+  display: block;
+  position: absolute;
+  right: 0px;
+  width: 10%;
+  z-index: 5;
+}
+
+.articleTitle
+{
+  font-size: 36px;
+  font-family: sans-serif;
+  font-weight: bold;
+  color: #00D9C0;
+}
+
+.articleSub
+{
+  margin: 5px auto;
+  font-size: 16px;
+  font-family: sans-serif;
+}
+
+.articleAuthor
+{
+
+}
+
+.articleBody
+{
+  width: 90%;
+  margin: 20px auto;
+  background-color: #28536B;
+  border: 5px solid #28536B;
+  color: #FFFFFF;
+  font-family: sans-serif;
+  text-align: left;
+  line-height: 1.5em;
+}
+
+.articleParagraph
+{
+  background-color: #28536B;
+  margin: 30px auto;
+}
+
+
+.article p {
+  background-color: black;
+  color: #FFFFFF;
+}
+
+/*
+//
+//
+//Dig bury
+//
+//
+*/
+
+.dig {
+  display: block;
+  position: absolute;
+  right: 0px;
+  width: 20%;
+  z-index: 5;
+}
+
+.bury {
+  display: block;
+  position: absolute;
+  width: 20%;
+  right: 0px;
+  z-index: 5;
+}
+
+
+.blurbImg {
+  margin-top: 40px;
+  height: 275px;
+  left: calc(width);
+  z-index: 2;
+
+}
+
+
 
 .cover {
   position: fixed;
@@ -258,6 +352,10 @@
     height: 190px;
   }
 
+  .article
+  {
+    width: 800px;
+  }
 
     .blurbLarge {
       display: block;

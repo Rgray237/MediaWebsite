@@ -17,10 +17,14 @@
       "title": "Magic: The Gathering",
       "category": "games",
       "sub": "sub2",
-      "blurb": "The best. Tap into your wizard brain, explore the full spectrum of creativity",
+      "author": "Robert Gray",
+      "blurb": "Tap into your wizard brain, explore the full spectrum of creativity",
       "url": "magicthegathering.html",
-      "articleBody": "this game cool!",
-      "articleId": "0001",
+      "numParagraphs":"1",
+      "numPullQuotes":"1",
+      "p1": "Magic: The Gathering has been snatching up the world’s valuable nerds since '93, and it still does it better than any tabletop game on the market. What is it that makes this game so great? I’ve distilled it down to a few main reasons",
+      "articleBody": "",
+      "articleId": "0002",
       "rating":"dig",
       "blurbImg":"2.jpeg"
     },
@@ -42,7 +46,7 @@
       "blurb": "Men and women, young and old, this one is beautifully hard to bear.",
       "url": "midsommar.html",
       "articleBody": "this movie is pretty cool!",
-      "articleId": "0001",
+      "articleId": "0004",
       "rating":"dig",
       "blurbImg":"4.jpeg"
     },
@@ -53,7 +57,7 @@
       "blurb": "Ostensibly exploring life and death, this lifeless film has little to say about either.",
       "url": "theirishman.html",
       "articleBody": "this movie is very bad!",
-      "articleId": "0001",
+      "articleId": "0005",
       "rating":"bury",
       "blurbImg":"5.jpeg"
     }

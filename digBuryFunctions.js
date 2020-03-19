@@ -1,8 +1,42 @@
-let rvwRqstURL = "reviews.json";
-let rvwRqst = new XMLHttpRequest();
-rvwRqst.open('GET', rvwRqstURL);
-rvwRqst.responseType = 'json';
-rvwRqst.send();
+
+
+function loadJSON(callback)
+{
+  let rvwRqstURL = "reviews.json";
+  let rvwRqst = new XMLHttpRequest();
+  rvwRqst.onreadystatechange = function() {
+    if (this.readyState == 4 && this.status == 200) {
+    callback();
+    }
+  };
+  rvwRqst.open('GET', rvwRqstURL,true);
+  rvwRqst.responseType = 'json';
+  rvwRqst.send();
+  return rvwRqst;
+}
+
+function loadJSON(callback,id)
+{
+  let rvwRqstURL = "reviews.json";
+  let rvwRqst = new XMLHttpRequest();
+  rvwRqst.onreadystatechange = function() {
+    if (this.readyState == 4 && this.status == 200) {
+      var response = rvwRqst.response;
+
+    callback(response['reviews'],id);
+    }
+  };
+  rvwRqst.open('GET', rvwRqstURL,true);
+  rvwRqst.responseType = 'json';
+  rvwRqst.send();
+  return rvwRqst;
+}
+
+function loadArticle(id)
+{
+  var rvwRqst = loadJSON(createArticle,id);
+
+}
 
 
 function getIntroBlurb(jsonObj)
@@ -23,6 +57,63 @@ function createAllBlurbsOfType(reviews,type)
       createABlurb(reviews,i);
     }
   }
+}
+
+
+function getIndexOfReviewFromID(reviews,id)
+{
+
+  for(var i = 0; i< reviews.length; i++)
+  {
+    if (reviews[i]["articleId"] == id)
+    {
+      return i;
+    }
+  }
+}
+
+function createArticle(reviews,id)
+{
+  var index = getIndexOfReviewFromID(reviews,id);
+  let div = document.createElement('div');
+  div.className = "article";
+  let img = document.createElement('img');
+  if (reviews[index]["rating"]=="dig")
+  {
+    img.src = "dig.png";
+    img.className = "articleDigBuryImg";
+  }
+  else
+  {
+    img.src = "bury.png";
+    img.className = "articleDigBuryImg";
+  }
+  div.appendChild(img);
+  let title = document.createElement('div');
+  title.className = "articleTitle";
+  title.innerHTML = reviews[index]["title"];
+  let sub = document.createElement('div');
+  sub.className = "articleSub";
+  sub.innerHTML = reviews[index]["blurb"];
+  div.appendChild(title);
+  div.appendChild(sub);
+
+  let bdy = document.createElement('div');
+  bdy.className = "articleBody";
+
+  var x = document.getElementsByClassName("page");
+
+  var numPars = reviews[index]["numParagraphs"];
+  for(i=1;i<=numPars;i++)
+  {
+    let newp = document.createElement('div');
+    newp.className = "articleParagraph";
+    newp.innerHTML = reviews[index]["p"+i];
+    bdy.appendChild(newp);
+  }
+  div.appendChild(bdy);
+  x[0].appendChild(div);
+
 }
 
 

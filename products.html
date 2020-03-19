@@ -21,7 +21,10 @@
 </body>
 
 <script>
-rvwRqst.onload = function() {
+var rvwRqst = loadJSON(populateMyBlurbs);
+
+function populateMyBlurbs()
+{
   const response = rvwRqst.response;
   const reviews = response['reviews'];
   createAllBlurbsOfType(reviews,"products");
