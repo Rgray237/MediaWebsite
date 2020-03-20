@@ -83,6 +83,7 @@
 
 
 .page {
+  width: auto;
   background-color: #0D0221;
 }
 
@@ -126,7 +127,7 @@
 
 .blurbLarge {
   display: block;
-  width: 500px;
+  width: 80%;
   margin: 0px auto;
   margin-top: 5px;
   background-color: #984447;
@@ -137,7 +138,7 @@
 }
 
 .blurbSmall {
-  width: 500px;
+  width: 80%;
   height: 500px;
   margin: 20px;
   display: inline-block;
@@ -202,7 +203,7 @@
 {
   display: block;
   height: 200px;
-  width: 500px;
+  width: 80%;
   margin: auto;
 
 }
